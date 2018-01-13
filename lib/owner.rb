@@ -70,7 +70,7 @@ class Owner
     @pets[:cats].each do |c|
       c.mood = "nervous"
     end
-    
+    @pets.clear
   end
 
   def list_pets

@@ -60,4 +60,8 @@ class Owner
     end
   end
 
+  def sell_pets
+    "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size} dog, and #{@pets[:cats].size} cats. "
+  end
+
 end

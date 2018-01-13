@@ -74,7 +74,8 @@ class Owner
   end
 
   def list_pets
-    "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size} if dog, and #{@pets[:cats].size} cats. "
+    "I have #{@pets[:fishes].size} fish, #{@pets[:dogs].size}  #{@pets[:dogs].size == 1? 'dog' : dogs}, and #{@pets[:cats].size} cats. "
+    "There #{@users.size == 1 ? 'is' : 'are'} #{@users.size} user#{'s' unless @users.size == 1}."
   end
 
 end

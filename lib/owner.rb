@@ -42,7 +42,9 @@ class Owner
   end
 
   def walk_dogs
-  
+    dog = Dog.new(name)
+    owner.pets[:dogs] << dog
+    #expect(dog.mood).to eq("happy")
   end
 
 end
